@@ -1,0 +1,58 @@
+#success_message{ display: none;}
+body{
+    background-image: url('https://images.ctfassets.net/hrltx12pl8hq/4plHDVeTkWuFMihxQnzBSb/aea2f06d675c3d710d095306e377382f/shutterstock_554314555_copy.jpg');
+    
+}
+input{
+    caret-color: skyblue;
+    border-color: skyblue;
+    
+    
+}
+
+
+#contact_form{
+    background: transparent;
+    color: rgb(68, 185, 231);
+    font-size: 16px;
+
+}
+#lte::after{
+    content: " *";
+    color: red;
+}
+legend{
+    color: rgb(68, 185, 231);
+}
+
+
+
+.glass {
+    position: relative;
+    background: inherit;
+    overflow: hidden;
+     padding: 20px; 
+     margin: 20vh 20vh 20vh 40vh; 
+ 
+   
+     width: 70%;
+    height: 70%; 
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+  
+  .glass:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
+    filter: blur(10px);
+    z-index: -1;
+  }

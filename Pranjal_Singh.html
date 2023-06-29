@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form_validation.css">
+
+    <title>Form_validation</title>
+</head>
+<body>
+ 
+    <div class="glass">
+    <div class="container">
+        <form name="myForm" class="well form-horizontal" action="form_validation.php" onsubmit="return validateForm()" method="post"  id="contact_form">
+    <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Contact Us! </legend>
+    
+    <!-- Text input-->
+    
+    <div class="form-group">
+      <label id="lte" class="col-md-4 control-label" >First Name:</label >  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input    name="first_name" placeholder="First Name" class="form-control"  type="text" >
+        </div>
+        <span  class="show_error"></span> 
+      </div>  
+    </div>
+    
+    <!-- Text input-->
+    
+    <div class="form-group">
+      <label id="lte" class="col-md-4 control-label" >Last Name:</label> 
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input    name="last_name" placeholder="Last Name" class="form-control"  type="text">
+        </div>
+        <span  class="show_error1"></span>
+      </div>
+    </div>
+    <!-- pattern="[a-zA-Z!@#$%^*_|]{3,16}" -->
+    
+    <!-- Text input-->
+           <div class="form-group">
+      <label id="lte"  class="col-md-4 control-label">E-Mail:</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input name="email" placeholder="E-Mail Address" class="form-control"  type="email">
+        </div>
+        <span  class="show_error2"></span>
+      </div>
+    </div>
+    
+    
+    <!-- Text input-->
+           
+    <div class="form-group">
+      <label id="lte"  class="col-md-4 control-label">Phone: </label> 
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            
+      <input name="phone"  placeholder="932-123-4444" class="form-control" type="number">
+        </div>
+        <span  class="show_error3"></span>
+      </div>
+    </div>
+    
+    
+    <!-- radio checks -->
+     <div class="form-group">
+                            <label id="lte"  class="col-md-4 control-label">Do you have website?:</label>
+                            <div class="col-md-4">
+                                <div class="radio" name="have_website">
+                                    <label>
+                                        <input  id="yes"  onclick="RadioButton('GroupName', 2)" type="radio" name="website" value="yes" /> Yes
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input id="no" onclick="RadioButton('GroupName', 2)" type="radio" name="website" value="no" /> No
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="show_error4"></div> 
+                        </div>
+                        
+
+                        
+<!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label">Website or domain name:</label>  
+         <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+        <input id="url" name="website" placeholder="Website or domain name" class="form-control" type="text">
+          </div>
+          <div class="url"></div>
+          <div class="show_error5"></div>
+        </div>
+      </div>
+    
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4">
+        <button  type="submit"  id="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span> </button>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4">
+       
+
+      </div>
+    </div>
+
+    
+    </fieldset>
+    </form>
+    </div>
+        </div><!-- /.container -->
+        
+       
+    </div>
+    <script src="form_validation.js"></script> 
+    
+    
+</body>
+</html>
+
